@@ -1,0 +1,55 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Prevent directory listing
+Options -Indexes
+
+# Redirect .html extensions to clean URLs (301 permanent redirect)
+# Only redirect if the request explicitly contains .html
+RewriteCond %{THE_REQUEST} \s/+([^.\s]+)\.html[\s?] [NC]
+RewriteRule ^ /%1? [R=301,L]
+
+# Redirect index.html to /home
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^ /home? [R=301,L]
+
+# Map specific routes to files (must come before general rule)
+RewriteRule ^home/?$ index.html [L]
+RewriteRule ^blog/?$ blog.html [L]
+RewriteRule ^careers/?$ jobs.html [L]
+RewriteRule ^jobs/?$ jobs.html [L]
+
+# Map job pages
+RewriteRule ^job-software-engineer/?$ job-software-engineer.html [L]
+RewriteRule ^job-senior-ios-developer/?$ job-senior-ios-developer.html [L]
+RewriteRule ^job-performance-marketing/?$ job-performance-marketing.html [L]
+RewriteRule ^job-email-marketing/?$ job-email-marketing.html [L]
+RewriteRule ^job-growth-marketing-manager/?$ job-growth-marketing-manager.html [L]
+RewriteRule ^job-product-research/?$ job-product-research.html [L]
+RewriteRule ^job-full-stack-developer/?$ job-full-stack-developer.html [L]
+
+# Map blog post pages
+RewriteRule ^blog-post-1/?$ blog-post-1.html [L]
+RewriteRule ^blog-post-2/?$ blog-post-2.html [L]
+RewriteRule ^blog-post-3/?$ blog-post-3.html [L]
+RewriteRule ^blog-post-4/?$ blog-post-4.html [L]
+RewriteRule ^blog-post-5/?$ blog-post-5.html [L]
+RewriteRule ^blog-post-6/?$ blog-post-6.html [L]
+
+# Map privacy policy and terms of service
+RewriteRule ^privacy-policy/?$ privacy-policy.html [L]
+RewriteRule ^terms-of-service/?$ terms-of-service.html [L]
+
+# Remove .html extension from URLs (for files that exist)
+# This handles any other .html files not explicitly mapped above
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Default to home if no file specified
+DirectoryIndex index.html
+
+# Handle root URL - redirect to /home
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /home [R=301,L]

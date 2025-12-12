@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Generative AI Teknoloji A.Ş.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container nav-transparent" id="nav-container">
+            <a href="/home" class="logo">
+                <img src="ai-studio-bg.png" alt="Parthenius AI Studio" class="logo-img">
+                <span class="logo-text">Parthenius AI Studio</span>
+            </a>
+            <div class="nav-links">
+                <a href="/home" class="nav-link">Home</a>
+                <a href="/blog" class="nav-link active">Blog</a>
+                <a href="/jobs" class="nav-link">Careers</a>
+            </div>
+            <div class="nav-cta">
+                <a href="/jobs" class="btn btn-primary">
+                    Join Us
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="/home" class="mobile-menu-link">Home</a>
+            <a href="/blog" class="mobile-menu-link active">Blog</a>
+            <a href="/jobs" class="mobile-menu-link">Careers</a>
+        </div>
+        <div class="mobile-menu-cta">
+            <a href="/jobs" class="btn btn-primary">
+                Join Us
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <div class="hero-content">
+            <!-- Badge -->
+            <div class="badge">
+                <span class="badge-text">Insights &</span>
+                <span class="badge-highlight">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    Updates
+                </span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="hero-title">
+                <span class="hero-title-line">Latest thoughts</span>
+                <span class="hero-title-line">on <span class="hero-title-accent">AI</span> & technology</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Exploring the frontiers of generative AI, sharing insights from our research, and documenting our
+                journey
+                in building intelligent applications.
+            </p>
+        </div>
+    </main>
+
+    <!-- Blog Posts Section -->
+    <section class="features-section">
+        <div class="section-container">
+            <div class="features-grid"
+                style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; align-items: stretch;">
+                <!-- Blog Post 2 - December 4, 2025 (Most Recent) -->
+                <a href="/blog-post-2" style="text-decoration: none; color: inherit; display: flex; height: 100%;">
+                    <article class="feature-card"
+                        style="cursor: pointer; display: flex; flex-direction: column; height: 100%; width: 100%; background: linear-gradient(135deg, rgba(255, 245, 250, 0.9) 0%, rgba(255, 240, 248, 0.8) 25%, rgba(255, 250, 252, 0.9) 50%, rgba(255, 242, 250, 0.85) 75%, rgba(255, 245, 250, 0.9) 100%), radial-gradient(circle at 30% 40%, rgba(255, 200, 230, 0.3) 0%, transparent 50%), radial-gradient(circle at 70% 60%, rgba(255, 220, 240, 0.25) 0%, transparent 50%);">
+                        <div style="margin-bottom: 0.75rem;">
+                            <span style="font-size: 0.75rem; color: var(--muted-foreground);">December 4, 2025</span>
+                        </div>
+                        <h3 class="feature-title" style="margin-bottom: 0.75rem;">Mastering Multi-Modal AI Workflows in
+                            ComfyUI</h3>
+                        <p class="feature-description" style="flex: 1;">
+                            ComfyUI's intelligent memory management and open-source architecture have democratized
+                            professional-grade generative AI, enabling complex workflows on consumer hardware. Its smart
+                            memory pipeline allows massive SDXL-class models to operate on GPUs with as little as 1GB of
+                            VRAM, turning sub-$500 hardware into a versatile multi-modal content factory.
+                        </p>
+                        <div
+                            style="margin-top: 1rem; color: var(--primary); font-weight: 600; font-size: 0.875rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            Read more
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Blog Post 1 - November 15, 2025 -->
+                <a href="/blog-post-1" style="text-decoration: none; color: inherit; display: flex; height: 100%;">
+                    <article class="feature-card"
+                        style="cursor: pointer; display: flex; flex-direction: column; height: 100%; width: 100%; background: linear-gradient(135deg, rgba(240, 244, 255, 0.9) 0%, rgba(230, 238, 255, 0.8) 25%, rgba(245, 247, 255, 0.9) 50%, rgba(235, 242, 255, 0.85) 75%, rgba(240, 244, 255, 0.9) 100%), radial-gradient(circle at 20% 30%, rgba(200, 220, 255, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(220, 230, 255, 0.25) 0%, transparent 50%);">
+                        <div style="margin-bottom: 0.75rem;">
+                            <span style="font-size: 0.75rem; color: var(--muted-foreground);">November 15, 2025</span>
+                        </div>
+                        <h3 class="feature-title" style="margin-bottom: 0.75rem;">AI Filmmaking Playbook 2026: Veo 3.1
+                            vs. Sora 2</h3>
+                        <p class="feature-description" style="flex: 1;">
+                            As of late 2025, the AI content creation landscape has been revolutionized by the official
+                            launch of two powerhouse video generation models: Google's Veo 3.1 and OpenAI's Sora 2. Both
+                            platforms promise to transform simple text prompts into high-quality, cinematic videos,
+                            complete with realistic physics, consistent characters, and integrated audio.
+                        </p>
+                        <div
+                            style="margin-top: 1rem; color: var(--primary); font-weight: 600; font-size: 0.875rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            Read more
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Blog Post 3 - November 9, 2025 -->
+                <a href="/blog-post-3" style="text-decoration: none; color: inherit; display: flex; height: 100%;">
+                    <article class="feature-card"
+                        style="cursor: pointer; display: flex; flex-direction: column; height: 100%; width: 100%; background: linear-gradient(135deg, rgba(240, 255, 250, 0.9) 0%, rgba(230, 255, 245, 0.8) 25%, rgba(245, 255, 252, 0.9) 50%, rgba(235, 255, 248, 0.85) 75%, rgba(240, 255, 250, 0.9) 100%), radial-gradient(circle at 25% 35%, rgba(200, 255, 230, 0.3) 0%, transparent 50%), radial-gradient(circle at 75% 65%, rgba(220, 255, 240, 0.25) 0%, transparent 50%);">
+                        <div style="margin-bottom: 0.75rem;">
+                            <span style="font-size: 0.75rem; color: var(--muted-foreground);">November 9, 2025</span>
+                        </div>
+                        <h3 class="feature-title" style="margin-bottom: 0.75rem;">Mastering Generative Media in 2025:
+                            High-ROI Prompt Engineering</h3>
+                        <p class="feature-description" style="flex: 1;">
+                            As of late 2025, the skill of prompt engineering has become a critical competency for anyone
+                            working with generative AI. This discipline is the art and science of designing, crafting,
+                            and
+                            refining inputs to guide generative media models toward producing precise, high-quality, and
+                            intended outputs.
+                        </p>
+                        <div
+                            style="margin-top: 1rem; color: var(--primary); font-weight: 600; font-size: 0.875rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            Read more
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Blog Post 6 - October 14, 2025 -->
+                <a href="/blog-post-6" style="text-decoration: none; color: inherit; display: flex; height: 100%;">
+                    <article class="feature-card"
+                        style="cursor: pointer; display: flex; flex-direction: column; height: 100%; width: 100%; background: linear-gradient(135deg, rgba(255, 252, 240, 0.9) 0%, rgba(255, 250, 235, 0.8) 25%, rgba(255, 254, 248, 0.9) 50%, rgba(255, 251, 242, 0.85) 75%, rgba(255, 252, 240, 0.9) 100%), radial-gradient(circle at 30% 50%, rgba(255, 240, 200, 0.3) 0%, transparent 50%), radial-gradient(circle at 70% 50%, rgba(255, 248, 220, 0.25) 0%, transparent 50%);">
+                        <div style="margin-bottom: 0.75rem;">
+                            <span style="font-size: 0.75rem; color: var(--muted-foreground);">October 14, 2025</span>
+                        </div>
+                        <h3 class="feature-title" style="margin-bottom: 0.75rem;">Generative Media 2025 Q4: From
+                            Dazzling Demos to Production Reality</h3>
+                        <p class="feature-description" style="flex: 1;">
+                            As Q4 2025 closes, the generative media landscape has moved beyond dazzling demos into the
+                            complex reality of production, defined by a fierce arms race, soaring adoption, and
+                            significant operational headwinds. The market is experiencing explosive growth, with
+                            spending
+                            projected to hit $644 billion, and 60% of organizations now implementing the technology.
+                        </p>
+                        <div
+                            style="margin-top: 1rem; color: var(--primary); font-weight: 600; font-size: 0.875rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            Read more
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Blog Post 5 - September 26, 2025 -->
+                <a href="/blog-post-5" style="text-decoration: none; color: inherit; display: flex; height: 100%;">
+                    <article class="feature-card"
+                        style="cursor: pointer; display: flex; flex-direction: column; height: 100%; width: 100%; background: linear-gradient(135deg, rgba(248, 245, 255, 0.9) 0%, rgba(242, 238, 255, 0.8) 25%, rgba(250, 248, 255, 0.9) 50%, rgba(245, 242, 255, 0.85) 75%, rgba(248, 245, 255, 0.9) 100%), radial-gradient(circle at 40% 30%, rgba(230, 220, 255, 0.3) 0%, transparent 50%), radial-gradient(circle at 60% 70%, rgba(240, 230, 255, 0.25) 0%, transparent 50%);">
+                        <div style="margin-bottom: 0.75rem;">
+                            <span style="font-size: 0.75rem; color: var(--muted-foreground);">September 26, 2025</span>
+                        </div>
+                        <h3 class="feature-title" style="margin-bottom: 0.75rem;">The AI Video Revolution of 2025:
+                            Driving Unprecedented ROI</h3>
+                        <p class="feature-description" style="flex: 1;">
+                            As we stand in late 2025, AI-generated video has crossed the chasm from experimental
+                            technology to an indispensable business tool, fundamentally rewiring content operations for
+                            the world's leading organizations. The shift is no longer a question of if, but how fast
+                            companies can integrate these capabilities to slash costs, accelerate market response, and
+                            deliver hyper-personalized experiences at scale.
+                        </p>
+                        <div
+                            style="margin-top: 1rem; color: var(--primary); font-weight: 600; font-size: 0.875rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            Read more
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Blog Post 4 - August 28, 2025 (Oldest) -->
+                <a href="/blog-post-4" style="text-decoration: none; color: inherit; display: flex; height: 100%;">
+                    <article class="feature-card"
+                        style="cursor: pointer; display: flex; flex-direction: column; height: 100%; width: 100%; background: linear-gradient(135deg, rgba(255, 247, 240, 0.9) 0%, rgba(255, 242, 230, 0.8) 25%, rgba(255, 250, 245, 0.9) 50%, rgba(255, 245, 238, 0.85) 75%, rgba(255, 247, 240, 0.9) 100%), radial-gradient(circle at 35% 45%, rgba(255, 220, 200, 0.3) 0%, transparent 50%), radial-gradient(circle at 65% 55%, rgba(255, 235, 215, 0.25) 0%, transparent 50%);">
+                        <div style="margin-bottom: 0.75rem;">
+                            <span style="font-size: 0.75rem; color: var(--muted-foreground);">August 28, 2025</span>
+                        </div>
+                        <h3 class="feature-title" style="margin-bottom: 0.75rem;">Nano Banana 2 Unveiled: Google's
+                            Studio-Quality AI Image Model</h3>
+                        <p class="feature-description" style="flex: 1;">
+                            The landscape of AI-driven creativity has been dramatically reshaped with the official
+                            global
+                            launch of Nano Banana 2 on November 20, 2025. Also known as Nano Banana Pro, this
+                            state-of-the-art image generation and editing model from Google DeepMind is not merely an
+                            incremental update; it's a paradigm shift for professional content creation.
+                        </p>
+                        <div
+                            style="margin-top: 1rem; color: var(--primary); font-weight: 600; font-size: 0.875rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            Read more
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/home" class="footer-logo">
+                        <img src="ai-studio-tr.png" alt="Parthenius AI Studio" class="footer-logo-img">
+                        <span class="footer-logo-text">Parthenius AI Studio</span>
+                    </a>
+                    <p class="footer-description">
+                        Pioneering intelligent applications through cutting-edge development and research in AI
+                        technology.
+                    </p>
+                    <div class="footer-social">
+                        <a href="http://linkedin.com/company/parthenius" class="footer-social-link"
+                            aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/jobs">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:hello@aistudio.works">hello@aistudio.works</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 Generative AI Teknoloji A.Ş. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="/privacy-policy">Privacy</a>
+                    <a href="/terms-of-service">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
